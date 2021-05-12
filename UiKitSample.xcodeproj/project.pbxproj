@@ -15,6 +15,7 @@
 		7C371F07264C1202002E276D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C371F05264C1202002E276D /* LaunchScreen.storyboard */; };
 		7C371F12264C1202002E276D /* UiKitSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C371F11264C1202002E276D /* UiKitSampleTests.swift */; };
 		7C371F1D264C1202002E276D /* UiKitSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C371F1C264C1202002E276D /* UiKitSampleUITests.swift */; };
+		7C371F2B264C1741002E276D /* ViewGoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C371F2A264C1741002E276D /* ViewGoneViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		7C371F18264C1202002E276D /* UiKitSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UiKitSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C371F1C264C1202002E276D /* UiKitSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiKitSampleUITests.swift; sourceTree = "<group>"; };
 		7C371F1E264C1202002E276D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C371F2A264C1741002E276D /* ViewGoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewGoneViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				7C371F03264C1202002E276D /* Assets.xcassets */,
 				7C371F05264C1202002E276D /* LaunchScreen.storyboard */,
 				7C371F08264C1202002E276D /* Info.plist */,
+				7C371F2A264C1741002E276D /* ViewGoneViewController.swift */,
 			);
 			path = UiKitSample;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			files = (
 				7C371EFF264C1200002E276D /* ViewController.swift in Sources */,
 				7C371EFB264C1200002E276D /* AppDelegate.swift in Sources */,
+				7C371F2B264C1741002E276D /* ViewGoneViewController.swift in Sources */,
 				7C371EFD264C1200002E276D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
