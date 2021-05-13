@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="skp-o3-os9">
-                                <rect key="frame" x="8" y="96" width="398" height="115"/>
+                                <rect key="frame" x="8" y="96" width="398" height="156"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w6Y-76-m9x">
                                         <rect key="frame" x="0.0" y="0.0" width="398" height="33"/>
@@ -44,6 +44,14 @@
                                             <segue destination="Ngp-xg-NOI" kind="show" id="wUf-4M-a3U"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RFs-Ln-nkq">
+                                        <rect key="frame" x="0.0" y="123" width="398" height="33"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                        <state key="normal" title="Cooperate Keyboard"/>
+                                        <connections>
+                                            <segue destination="mQ3-Bx-AOj" kind="show" id="0k1-e0-hG8"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -60,6 +68,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="790" y="78"/>
+        </scene>
+        <!--キーボード調整-->
+        <scene sceneID="NVt-mK-LPP">
+            <objects>
+                <viewController id="mQ3-Bx-AOj" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8qo-2d-UZC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MIb-Gc-R0F">
+                                <rect key="frame" x="8" y="820" width="398" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jmK-JQ-USA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jmK-JQ-USA" firstAttribute="trailing" secondItem="MIb-Gc-R0F" secondAttribute="trailing" constant="8" id="6aH-mY-CFH"/>
+                            <constraint firstItem="jmK-JQ-USA" firstAttribute="bottom" secondItem="MIb-Gc-R0F" secondAttribute="bottom" constant="8" id="VXx-kz-4hU"/>
+                            <constraint firstItem="MIb-Gc-R0F" firstAttribute="leading" secondItem="jmK-JQ-USA" secondAttribute="leading" constant="8" id="byi-Xb-78z"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="キーボード調整" id="4v7-t0-nZY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rMV-DI-2L8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1670" y="313"/>
         </scene>
         <!--UITableView-->
         <scene sceneID="8Yx-56-sHb">
@@ -122,7 +158,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ffi-Ol-zsC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1669.5652173913045" y="546.42857142857144"/>
+            <point key="canvasLocation" x="1670" y="-370"/>
         </scene>
         <!--ScrollView-->
         <scene sceneID="nQg-mF-ZW4">
@@ -210,7 +246,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aD0-Hk-1np" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1671" y="-117"/>
+            <point key="canvasLocation" x="1670" y="-1050"/>
         </scene>
         <!--View.GONE-->
         <scene sceneID="PLP-b3-AmC">
@@ -288,7 +324,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ISG-bo-fyR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1672" y="-796"/>
+            <point key="canvasLocation" x="1670" y="-1755"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Vhe-Wf-thk">
