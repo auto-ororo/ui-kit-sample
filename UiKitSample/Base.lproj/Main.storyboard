@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="skp-o3-os9">
-                                <rect key="frame" x="8" y="96" width="398" height="33"/>
+                                <rect key="frame" x="8" y="96" width="398" height="74"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w6Y-76-m9x">
                                         <rect key="frame" x="0.0" y="0.0" width="398" height="33"/>
@@ -25,6 +26,14 @@
                                         <state key="normal" title="View.GONE"/>
                                         <connections>
                                             <segue destination="8zm-Hg-m7w" kind="show" id="6zC-lp-kb3"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ny7-Gl-dbf">
+                                        <rect key="frame" x="0.0" y="41" width="398" height="33"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                        <state key="normal" title="ScrollView"/>
+                                        <connections>
+                                            <segue destination="AR0-LU-KmS" kind="show" id="tGE-Xb-GP8"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -42,7 +51,95 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="942" y="124"/>
+            <point key="canvasLocation" x="790" y="78"/>
+        </scene>
+        <!--ScrollView-->
+        <scene sceneID="nQg-mF-ZW4">
+            <objects>
+                <viewController id="AR0-LU-KmS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="thV-ao-pzN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="青空文庫" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgk-LJ-xfw">
+                                <rect key="frame" x="8" y="833.5" width="398" height="20.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                <color key="textColor" name="AccentColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="koB-et-kiq">
+                                <rect key="frame" x="0.0" y="88" width="414" height="737.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NL7-Yi-clv" userLabel="ContentView">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1972"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qin-Bs-JZm">
+                                                <rect key="frame" x="8" y="77" width="398" height="1887"/>
+                                                <mutableString key="text">　吾輩わがはいは猫である。名前はまだ無い。
+　どこで生れたかとんと見当けんとうがつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。吾輩はここで始めて人間というものを見た。しかもあとで聞くとそれは書生という人間中で一番獰悪どうあくな種族であったそうだ。この書生というのは時々我々を捕つかまえて煮にて食うという話である。しかしその当時は何という考もなかったから別段恐しいとも思わなかった。ただ彼の掌てのひらに載せられてスーと持ち上げられた時何だかフワフワした感じがあったばかりである。掌の上で少し落ちついて書生の顔を見たのがいわゆる人間というものの見始みはじめであろう。この時妙なものだと思った感じが今でも残っている。第一毛をもって装飾されべきはずの顔がつるつるしてまるで薬缶やかんだ。その後ご猫にもだいぶ逢あったがこんな片輪かたわには一度も出会でくわした事がない。のみならず顔の真中があまりに突起している。そうしてその穴の中から時々ぷうぷうと煙けむりを吹く。どうも咽むせぽくて実に弱った。これが人間の飲む煙草たばこというものである事はようやくこの頃知った。
+　この書生の掌の裏うちでしばらくはよい心持に坐っておったが、しばらくすると非常な速力で運転し始めた。書生が動くのか自分だけが動くのか分らないが無暗むやみに眼が廻る。胸が悪くなる。到底とうてい助からないと思っていると、どさりと音がして眼から火が出た。それまでは記憶しているがあとは何の事やらいくら考え出そうとしても分らない。
+　ふと気が付いて見ると書生はいない。たくさんおった兄弟が一疋ぴきも見えぬ。肝心かんじんの母親さえ姿を隠してしまった。その上今いままでの所とは違って無暗むやみに明るい。眼を明いていられぬくらいだ。はてな何でも容子ようすがおかしいと、のそのそ這はい出して見ると非常に痛い。吾輩は藁わらの上から急に笹原の中へ棄てられたのである。
+　ようやくの思いで笹原を這い出すと向うに大きな池がある。吾輩は池の前に坐ってどうしたらよかろうと考えて見た。別にこれという分別ふんべつも出ない。しばらくして泣いたら書生がまた迎に来てくれるかと考え付いた。ニャー、ニャーと試みにやって見たが誰も来ない。そのうち池の上をさらさらと風が渡って日が暮れかかる。腹が非常に減って来た。泣きたくても声が出ない。仕方がない、何でもよいから食物くいもののある所まであるこうと決心をしてそろりそろりと池を左ひだりに廻り始めた。どうも非常に苦しい。そこを我慢して無理やりに這はって行くとようやくの事で何となく人間臭い所へ出た。ここへ這入はいったら、どうにかなると思って竹垣の崩くずれた穴から、とある邸内にもぐり込んだ。縁は不思議なもので、もしこの竹垣が破れていなかったなら、吾輩はついに路傍ろぼうに餓死がししたかも知れんのである。一樹の蔭とはよく云いったものだ。この垣根の穴は今日こんにちに至るまで吾輩が隣家となりの三毛を訪問する時の通路になっている。さて邸やしきへは忍び込んだもののこれから先どうして善いいか分らない。そのうちに暗くなる、腹は減る、寒さは寒し、雨が降って来るという始末でもう一刻の猶予ゆうよが出来なくなった。仕方がないからとにかく明るくて暖かそうな方へ方へとあるいて行く。今から考えるとその時はすでに家の内に這入っておったのだ。ここで吾輩は彼かの書生以外の人間を再び見るべき機会に遭遇そうぐうしたのである。第一に逢ったのがおさんである。これは前の書生より一層乱暴な方で吾輩を見るや否やいきなり頸筋くびすじをつかんで表へ抛ほうり出した。いやこれは駄目だと思ったから眼をねぶって運を天に任せていた。しかしひもじいのと寒いのにはどうしても我慢が出来ん。吾輩は再びおさんの隙すきを見て台所へ這はい上あがった。すると間もなくまた投げ出された。吾輩は投げ出されては這い上り、這い上っては投げ出され、何でも同じ事を四五遍繰り返したのを記憶している。その時におさんと云う者はつくづくいやになった。この間おさんの三馬さんまを偸ぬすんでこの返報をしてやってから、やっと胸の痞つかえが下りた。吾輩が最後につまみ出されようとしたときに、この家うちの主人が騒々しい何だといいながら出て来た。下女は吾輩をぶら下げて主人の方へ向けてこの宿やどなしの小猫がいくら出しても出しても御台所おだいどころへ上あがって来て困りますという。主人は鼻の下の黒い毛を撚ひねりながら吾輩の顔をしばらく眺ながめておったが、やがてそんなら内へ置いてやれといったまま奥へ這入はいってしまった。主人はあまり口を聞かぬ人と見えた。下女は口惜くやしそうに吾輩を台所へ抛ほうり出した。かくして吾輩はついにこの家うちを自分の住家すみかと極きめる事にしたのである。</mutableString>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="吾輩は猫である" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ue4-MP-1MY">
+                                                <rect key="frame" x="8" y="8" width="398" height="30"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="夏目漱石" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kj6-L7-ijb" userLabel="夏目漱石">
+                                                <rect key="frame" x="8" y="46" width="398" height="23"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="qin-Bs-JZm" firstAttribute="leading" secondItem="NL7-Yi-clv" secondAttribute="leading" constant="8" id="0zk-ll-VTU"/>
+                                            <constraint firstItem="qin-Bs-JZm" firstAttribute="top" secondItem="kj6-L7-ijb" secondAttribute="bottom" constant="8" id="9iH-WC-xFJ"/>
+                                            <constraint firstAttribute="bottom" secondItem="qin-Bs-JZm" secondAttribute="bottom" constant="8" id="JWC-Aa-xhX"/>
+                                            <constraint firstAttribute="trailing" secondItem="kj6-L7-ijb" secondAttribute="trailing" constant="8" id="WvV-dS-EaQ"/>
+                                            <constraint firstItem="kj6-L7-ijb" firstAttribute="top" secondItem="Ue4-MP-1MY" secondAttribute="bottom" constant="8" id="X48-aV-4bl"/>
+                                            <constraint firstAttribute="trailing" secondItem="qin-Bs-JZm" secondAttribute="trailing" constant="8" id="ZIA-dl-n5I"/>
+                                            <constraint firstItem="Ue4-MP-1MY" firstAttribute="leading" secondItem="NL7-Yi-clv" secondAttribute="leading" constant="8" id="hmM-Y8-fJC"/>
+                                            <constraint firstItem="Ue4-MP-1MY" firstAttribute="top" secondItem="NL7-Yi-clv" secondAttribute="top" constant="8" id="iqV-BC-3RH"/>
+                                            <constraint firstItem="kj6-L7-ijb" firstAttribute="leading" secondItem="NL7-Yi-clv" secondAttribute="leading" constant="8" id="kYp-mm-2GO"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ue4-MP-1MY" secondAttribute="trailing" constant="8" id="vCy-0p-9dr"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="NL7-Yi-clv" firstAttribute="top" secondItem="tgB-eS-Jks" secondAttribute="top" id="99h-Sd-Q1u"/>
+                                    <constraint firstItem="NL7-Yi-clv" firstAttribute="width" secondItem="TQf-OX-McQ" secondAttribute="width" id="B7Y-fx-cNc"/>
+                                    <constraint firstItem="tgB-eS-Jks" firstAttribute="trailing" secondItem="NL7-Yi-clv" secondAttribute="trailing" id="PUU-Co-KT6"/>
+                                    <constraint firstItem="tgB-eS-Jks" firstAttribute="bottom" secondItem="NL7-Yi-clv" secondAttribute="bottom" id="d9F-ym-GOF"/>
+                                    <constraint firstItem="NL7-Yi-clv" firstAttribute="leading" secondItem="tgB-eS-Jks" secondAttribute="leading" id="oZz-yV-GPY"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="tgB-eS-Jks"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="TQf-OX-McQ"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="z7y-7Y-H9h"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="koB-et-kiq" firstAttribute="leading" secondItem="z7y-7Y-H9h" secondAttribute="leading" id="0j9-xz-yCc"/>
+                            <constraint firstItem="koB-et-kiq" firstAttribute="top" secondItem="z7y-7Y-H9h" secondAttribute="top" id="4mo-dP-7CZ"/>
+                            <constraint firstItem="z7y-7Y-H9h" firstAttribute="trailing" secondItem="koB-et-kiq" secondAttribute="trailing" id="9gp-qW-fzY"/>
+                            <constraint firstItem="cgk-LJ-xfw" firstAttribute="leading" secondItem="z7y-7Y-H9h" secondAttribute="leading" constant="8" id="Cg4-Fz-gEI"/>
+                            <constraint firstItem="z7y-7Y-H9h" firstAttribute="bottom" secondItem="cgk-LJ-xfw" secondAttribute="bottom" constant="8" id="b4f-Bb-k1r"/>
+                            <constraint firstItem="cgk-LJ-xfw" firstAttribute="top" secondItem="koB-et-kiq" secondAttribute="bottom" constant="8" id="lfc-dC-qci"/>
+                            <constraint firstItem="z7y-7Y-H9h" firstAttribute="trailing" secondItem="cgk-LJ-xfw" secondAttribute="trailing" constant="8" id="sWu-kp-afk"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="ScrollView" id="dBL-f1-GTh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aD0-Hk-1np" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1656.521739130435" y="416.51785714285711"/>
         </scene>
         <!--View.GONE-->
         <scene sceneID="PLP-b3-AmC">
@@ -120,7 +217,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ISG-bo-fyR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1817" y="-92"/>
+            <point key="canvasLocation" x="1657" y="-230"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Vhe-Wf-thk">
@@ -138,10 +235,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X3g-rz-DMH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="123.88392857142857"/>
+            <point key="canvasLocation" x="-22" y="78"/>
         </scene>
     </scenes>
     <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
