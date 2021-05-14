@@ -21,7 +21,6 @@ class UITableViewViewController: UIViewController, UITableViewDelegate {
     ]
     
     private enum Section: CaseIterable {
-        case top
         case main
     }
     
