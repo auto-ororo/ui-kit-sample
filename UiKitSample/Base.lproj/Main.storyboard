@@ -20,8 +20,16 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="skp-o3-os9">
                                 <rect key="frame" x="8" y="96" width="398" height="197"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w6Y-76-m9x">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iuZ-yu-Xrx">
                                         <rect key="frame" x="0.0" y="0.0" width="398" height="33"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                        <state key="normal" title="StackView"/>
+                                        <connections>
+                                            <segue destination="Xhb-Ea-qVG" kind="show" id="y51-yz-a3y"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w6Y-76-m9x">
+                                        <rect key="frame" x="0.0" y="41" width="398" height="33"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                         <state key="normal" title="View.GONE"/>
                                         <connections>
@@ -29,7 +37,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ny7-Gl-dbf">
-                                        <rect key="frame" x="0.0" y="41" width="398" height="33"/>
+                                        <rect key="frame" x="0.0" y="82" width="398" height="33"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                         <state key="normal" title="ScrollView"/>
                                         <connections>
@@ -37,7 +45,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPn-g5-Arf">
-                                        <rect key="frame" x="0.0" y="82" width="398" height="33"/>
+                                        <rect key="frame" x="0.0" y="123" width="398" height="33"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                         <state key="normal" title="UITableView"/>
                                         <connections>
@@ -45,19 +53,11 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RFs-Ln-nkq">
-                                        <rect key="frame" x="0.0" y="123" width="398" height="33"/>
+                                        <rect key="frame" x="0.0" y="164" width="398" height="33"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                         <state key="normal" title="UICollectionView - List"/>
                                         <connections>
                                             <segue destination="mQ3-Bx-AOj" kind="show" id="0k1-e0-hG8"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iuZ-yu-Xrx">
-                                        <rect key="frame" x="0.0" y="164" width="398" height="33"/>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
-                                        <state key="normal" title="HStackView"/>
-                                        <connections>
-                                            <segue destination="Xhb-Ea-qVG" kind="show" id="y51-yz-a3y"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -434,7 +434,8 @@
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9VB-pw-GHe" userLabel="labelContainer1">
                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="71"/>
-                                                        <string key="text">.fill※個々の幅はContent Hugging Priority､intrinsicContentSize、Width制約で決まる</string>
+                                                        <string key="text">.fill
+※個々の幅はContent Hugging Priority､intrinsicContentSize、Width制約で決まる</string>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -466,7 +467,8 @@
                                                     </stackView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fx2-PD-Clx" userLabel="labelContainer2">
                                                         <rect key="frame" x="0.0" y="167" width="414" height="47"/>
-                                                        <string key="text">.fillEqually※Width制約を指定してはいけない</string>
+                                                        <string key="text">.fillEqually
+※Width制約を指定してはいけない</string>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -495,7 +497,8 @@
                                                     </stackView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xo7-pg-QaI" userLabel="labelContainer3">
                                                         <rect key="frame" x="0.0" y="310" width="414" height="71"/>
-                                                        <string key="text">.fillProportionally※InstrinsicContentSizeの比率を保ったまま幅いっぱいに広げる(.fillEquallyとの違いに注目)</string>
+                                                        <string key="text">.fillProportionally
+※InstrinsicContentSizeの比率を保ったまま幅いっぱいに広げる(.fillEquallyとの違いに注目)</string>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -527,7 +530,8 @@
                                                     </stackView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dox-B8-bOq" userLabel="labelContainer4">
                                                         <rect key="frame" x="0.0" y="477" width="414" height="71"/>
-                                                        <string key="text">.equalSpacing※Spacingを同じにする、個々のWidthは制約、及びinstrinsicContentSizeできまる</string>
+                                                        <string key="text">.equalSpacing
+※Spacingを同じにする、個々のWidthは制約、及びinstrinsicContentSizeできまる</string>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -563,7 +567,8 @@
                                                     </stackView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UrZ-kG-8T0" userLabel="labelContainer5">
                                                         <rect key="frame" x="0.0" y="644" width="414" height="95"/>
-                                                        <string key="text">.equalCentering※中心同士の距離を等しくする。個々のWidthは制約、及びinstrinsicContentSizeできまる。Spacingは動的に決まる。</string>
+                                                        <string key="text">.equalCentering
+※中心同士の距離を等しくする。個々のWidthは制約、及びinstrinsicContentSizeできまる。Spacingは動的に決まる。</string>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
