@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class ScrollViewViewController: UIViewController {
+final class ScrollViewViewController: UIViewController {
     
     private let storyString = """
     　吾輩わがはいは猫である。名前はまだ無い。
@@ -20,8 +20,12 @@ class ScrollViewViewController: UIViewController {
 
     @IBOutlet weak var story: UILabel!
     
-    @IBAction func showStory(_ sender: UIButton) {
-        story.text = storyString
+    @IBAction func toggleStory(_ sender: UIButton) {
+        if story.text?.isEmpty == true {
+            story.text = storyString
+        } else {
+            story.text = ""
+        }
     }
     
     @IBAction func showLink(_ sender: UIButton) {
@@ -32,7 +36,33 @@ class ScrollViewViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
-        story.text = storyString
     }
 }
+
+#if DEBUG
+import SwiftUI
+
+extension ScrollViewViewController: UIViewControllerRepresentable {
+    func makeUIViewController(context: Context) -> ScrollViewViewController {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        guard let viewController =  storyboard.instantiateViewController(
+                identifier: "scrollViewSample") as? ScrollViewViewController else {
+            fatalError("Cannot load from storyboard")
+        }
+        
+        // Configure the view controller here
+        return viewController
+    }
+    
+    func updateUIViewController(_ uiViewController: ScrollViewViewController,
+                                context: Context) {
+    }
+}
+
+struct ScrollViewViewControllerPreviews: PreviewProvider {
+    static var previews: some View {
+        ScrollViewViewController()
+    }
+}
+#endif
+
