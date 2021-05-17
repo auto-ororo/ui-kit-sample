@@ -71,7 +71,7 @@
         <!--UICollectionView - List-->
         <scene sceneID="NVt-mK-LPP">
             <objects>
-                <viewController storyboardIdentifier="hoge" useStoryboardIdentifierAsRestorationIdentifier="YES" id="mQ3-Bx-AOj" customClass="UICollectionViewListViewController" customModule="UiKitSample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="collectionViewSample" useStoryboardIdentifierAsRestorationIdentifier="YES" id="mQ3-Bx-AOj" customClass="UICollectionViewListViewController" customModule="UiKitSample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8qo-2d-UZC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

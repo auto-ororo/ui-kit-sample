@@ -52,6 +52,8 @@ final class UICollectionViewListViewController : UIViewController {
         let layout = UICollectionViewCompositionalLayout.list(using: configuration)
         collectionView.collectionViewLayout = layout
         
+        // Cellの登録/更新方法を指定
+        // ・Xib指定が不要なので実行時エラーを防げる
         let reg = UICollectionView.CellRegistration<CollectionListItemViewCell, BookCell> { cell, indexPath, book in
             cell.id = book.id
             cell.title = book.title
@@ -59,6 +61,7 @@ final class UICollectionViewListViewController : UIViewController {
             cell.dateTime = self.dateFormatter.string(from: book.date)
         }
         
+        // リスト更新時に返却するCellを設定
         datasource = UICollectionViewDiffableDataSource<Section, BookCell>(collectionView: collectionView) { (collectionView: UICollectionView, indexPath: IndexPath, item: BookCell) -> UICollectionViewCell? in
             // 再利用可能なセルを返す
             return collectionView.dequeueConfiguredReusableCell(using: reg, for: indexPath, item: item)
@@ -94,6 +97,7 @@ final class UICollectionViewListViewController : UIViewController {
         updateList()
     }
     
+    // リスト更新
     private func updateList() {
         // UICollectionViewにデータを提供する構造体
         var snapshot = NSDiffableDataSourceSnapshot<Section, BookCell>()
@@ -113,7 +117,7 @@ extension UICollectionViewListViewController: UIViewControllerRepresentable {
     func makeUIViewController(context: Context) -> UICollectionViewListViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         guard let viewController =  storyboard.instantiateViewController(
-                identifier: "hoge") as? UICollectionViewListViewController else {
+                identifier: "collectionViewSample") as? UICollectionViewListViewController else {
             fatalError("Cannot load from storyboard")
         }
         // Configure the view controller here
