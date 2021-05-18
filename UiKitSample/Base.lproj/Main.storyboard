@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="skp-o3-os9">
-                                <rect key="frame" x="8" y="96" width="398" height="197"/>
+                                <rect key="frame" x="8" y="96" width="398" height="238"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iuZ-yu-Xrx">
                                         <rect key="frame" x="0.0" y="0.0" width="398" height="33"/>
@@ -58,6 +58,14 @@
                                         <state key="normal" title="UICollectionView - List"/>
                                         <connections>
                                             <segue destination="mQ3-Bx-AOj" kind="show" id="0k1-e0-hG8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VkT-Mb-Qse">
+                                        <rect key="frame" x="0.0" y="205" width="398" height="33"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                        <state key="normal" title="With SwiftUI"/>
+                                        <connections>
+                                            <segue destination="1yV-Wr-Qxr" kind="show" id="2C3-f3-n8W"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -415,6 +423,65 @@
             </objects>
             <point key="canvasLocation" x="-22" y="78"/>
         </scene>
+        <!--With SwiftUI-->
+        <scene sceneID="SHu-gm-qgL">
+            <objects>
+                <viewController id="1yV-Wr-Qxr" customClass="WithSwiftUIViewController" customModule="UiKitSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NFg-uV-DdP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="0a7-rq-jrP">
+                                <rect key="frame" x="8" y="88" width="398" height="74.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZyO-WF-PGY">
+                                        <rect key="frame" x="0.0" y="0.0" width="398" height="74.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UIKit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LNm-en-mky">
+                                                <rect key="frame" x="4" y="4" width="386" height="54.5"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ec-Oq-PCH">
+                                                <rect key="frame" x="8" y="66.5" width="382" height="0.0"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="linkColor"/>
+                                        <constraints>
+                                            <constraint firstItem="2ec-Oq-PCH" firstAttribute="leading" secondItem="ZyO-WF-PGY" secondAttribute="leading" constant="8" id="0R4-tV-OQk"/>
+                                            <constraint firstItem="LNm-en-mky" firstAttribute="top" secondItem="ZyO-WF-PGY" secondAttribute="top" constant="4" id="6b8-40-P83"/>
+                                            <constraint firstItem="LNm-en-mky" firstAttribute="leading" secondItem="ZyO-WF-PGY" secondAttribute="leading" constant="4" id="6dr-eM-BcF"/>
+                                            <constraint firstItem="2ec-Oq-PCH" firstAttribute="top" secondItem="LNm-en-mky" secondAttribute="bottom" constant="8" id="7le-vK-PF6"/>
+                                            <constraint firstAttribute="trailing" secondItem="LNm-en-mky" secondAttribute="trailing" constant="8" id="8Vt-cJ-8aD"/>
+                                            <constraint firstAttribute="trailing" secondItem="2ec-Oq-PCH" secondAttribute="trailing" constant="8" id="AjX-JN-0bP"/>
+                                            <constraint firstAttribute="bottom" secondItem="2ec-Oq-PCH" secondAttribute="bottom" constant="8" id="Kds-Xg-xhL"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Fx6-QO-PfK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0a7-rq-jrP" firstAttribute="top" secondItem="Fx6-QO-PfK" secondAttribute="top" id="52S-th-Qip"/>
+                            <constraint firstItem="0a7-rq-jrP" firstAttribute="leading" secondItem="Fx6-QO-PfK" secondAttribute="leading" constant="8" id="Vyx-cC-htp"/>
+                            <constraint firstItem="Fx6-QO-PfK" firstAttribute="trailing" secondItem="0a7-rq-jrP" secondAttribute="trailing" constant="8" id="rRL-Q0-B9a"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="With SwiftUI" id="rjN-f0-PX4"/>
+                    <connections>
+                        <outlet property="showSwiftUITextLabel" destination="2ec-Oq-PCH" id="XWO-Wr-su4"/>
+                        <outlet property="vStackView" destination="0a7-rq-jrP" id="Rn4-jC-aYP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2HS-gn-Lch" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="862.31884057971024" y="883.92857142857144"/>
+        </scene>
         <!--StackView-->
         <scene sceneID="oeQ-l3-JOC">
             <objects>
@@ -645,6 +712,9 @@
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

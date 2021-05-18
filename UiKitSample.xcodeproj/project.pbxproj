@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A51C06B2653756C00A46193 /* WithSwiftUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A51C06A2653756C00A46193 /* WithSwiftUIViewController.swift */; };
 		2A658EF8264E101B00F9CF1E /* UICollectionViewListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A658EF7264E101B00F9CF1E /* UICollectionViewListViewController.swift */; };
 		2A658EFA264E1CAE00F9CF1E /* CollectionListItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A658EF9264E1CAE00F9CF1E /* CollectionListItem.xib */; };
 		2A658EFC264E1E7F00F9CF1E /* CollectionListItemViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A658EFB264E1E7F00F9CF1E /* CollectionListItemViewCell.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A51C06A2653756C00A46193 /* WithSwiftUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithSwiftUIViewController.swift; sourceTree = "<group>"; };
 		2A658EF7264E101B00F9CF1E /* UICollectionViewListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewListViewController.swift; sourceTree = "<group>"; };
 		2A658EF9264E1CAE00F9CF1E /* CollectionListItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionListItem.xib; sourceTree = "<group>"; };
 		2A658EFB264E1E7F00F9CF1E /* CollectionListItemViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionListItemViewCell.swift; sourceTree = "<group>"; };
@@ -92,6 +94,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A51C0692653754A00A46193 /* UIHostingController */ = {
+			isa = PBXGroup;
+			children = (
+				2A51C06A2653756C00A46193 /* WithSwiftUIViewController.swift */,
+			);
+			path = UIHostingController;
+			sourceTree = "<group>";
+		};
 		2A94491526520D6A00936AC5 /* ViewGone */ = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +161,7 @@
 		7C371EF9264C1200002E276D /* UiKitSample */ = {
 			isa = PBXGroup;
 			children = (
+				2A51C0692653754A00A46193 /* UIHostingController */,
 				2A94491826520DB700936AC5 /* UICollectionView */,
 				2A94491726520D9D00936AC5 /* UITableView */,
 				2A94491626520D8900936AC5 /* ScrollView */,
@@ -321,6 +332,7 @@
 				2A658EF8264E101B00F9CF1E /* UICollectionViewListViewController.swift in Sources */,
 				2A658EFC264E1E7F00F9CF1E /* CollectionListItemViewCell.swift in Sources */,
 				7C371EFB264C1200002E276D /* AppDelegate.swift in Sources */,
+				2A51C06B2653756C00A46193 /* WithSwiftUIViewController.swift in Sources */,
 				7C371F2B264C1741002E276D /* ViewGoneViewController.swift in Sources */,
 				2ABDE726264CF1EC009112A4 /* ListItemViewCell.swift in Sources */,
 				2ABDE722264CE3AC009112A4 /* UITableViewViewController.swift in Sources */,
