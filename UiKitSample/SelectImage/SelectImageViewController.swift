@@ -108,6 +108,12 @@ class SelectImageViewController: ViewController, UIImagePickerControllerDelegate
         if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
             let data = image.jpegData(compressionQuality: 0.9)!
             try! data.write(to: self.url)
+            
+            // カメラの場合はカメラロールに保存
+            if picker.sourceType == .camera {
+                UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
+            }
+            
             imageLabel.image = UIImage(data: data)
         } else{
             print("Error")
