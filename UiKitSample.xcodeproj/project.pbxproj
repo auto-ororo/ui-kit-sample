@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A0E6162269C51BE00976357 /* SelectImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0E6161269C51BE00976357 /* SelectImageViewController.swift */; };
 		2A51C06B2653756C00A46193 /* WithSwiftUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A51C06A2653756C00A46193 /* WithSwiftUIViewController.swift */; };
 		2A658EF8264E101B00F9CF1E /* UICollectionViewListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A658EF7264E101B00F9CF1E /* UICollectionViewListViewController.swift */; };
 		2A658EFA264E1CAE00F9CF1E /* CollectionListItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A658EF9264E1CAE00F9CF1E /* CollectionListItem.xib */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A0E6161269C51BE00976357 /* SelectImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectImageViewController.swift; sourceTree = "<group>"; };
 		2A51C06A2653756C00A46193 /* WithSwiftUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithSwiftUIViewController.swift; sourceTree = "<group>"; };
 		2A658EF7264E101B00F9CF1E /* UICollectionViewListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewListViewController.swift; sourceTree = "<group>"; };
 		2A658EF9264E1CAE00F9CF1E /* CollectionListItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionListItem.xib; sourceTree = "<group>"; };
@@ -94,6 +96,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A0E6160269C519100976357 /* SelectImage */ = {
+			isa = PBXGroup;
+			children = (
+				2A0E6161269C51BE00976357 /* SelectImageViewController.swift */,
+			);
+			path = SelectImage;
+			sourceTree = "<group>";
+		};
 		2A51C0692653754A00A46193 /* UIHostingController */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +171,7 @@
 		7C371EF9264C1200002E276D /* UiKitSample */ = {
 			isa = PBXGroup;
 			children = (
+				2A0E6160269C519100976357 /* SelectImage */,
 				2A51C0692653754A00A46193 /* UIHostingController */,
 				2A94491826520DB700936AC5 /* UICollectionView */,
 				2A94491726520D9D00936AC5 /* UITableView */,
@@ -328,6 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C371F2D264F54C5002E276D /* ScrollViewViewController.swift in Sources */,
+				2A0E6162269C51BE00976357 /* SelectImageViewController.swift in Sources */,
 				7C371EFF264C1200002E276D /* ViewController.swift in Sources */,
 				2A658EF8264E101B00F9CF1E /* UICollectionViewListViewController.swift in Sources */,
 				2A658EFC264E1E7F00F9CF1E /* CollectionListItemViewCell.swift in Sources */,
@@ -442,7 +454,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -497,7 +509,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -512,6 +524,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V93B98246Y;
 				INFOPLIST_FILE = UiKitSample/Info.plist;
@@ -519,8 +532,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ororo.auto.UiKitSample;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ororoauto.ui-kit-sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -531,6 +545,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V93B98246Y;
 				INFOPLIST_FILE = UiKitSample/Info.plist;
@@ -538,8 +553,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ororo.auto.UiKitSample;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ororoauto.ui-kit-sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
